@@ -11,7 +11,7 @@ home.get(`/author`, (_, res) => {
 });
 home.get([`/`, `/home`], (_, res) => {
   console.log(`☕Author ${JSON.stringify(products)}`);
-  console.log(`sirviendo recursos: 'shop.html'`);
+  console.log(`sirviendo recursos: 'author.html'`);
   res.render('author');
 });
 

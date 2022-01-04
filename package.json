@@ -1,14 +1,17 @@
 {
   "name": "node-starter",
   "version": "0.0.0",
+  "main": "index.js",
   "scripts": {
-    "start": "echo \"Iniciando...\" && node index",
-    "dev": "nodemon index",
+    "start": "cross-env echo \"Iniciando...\" && NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "express": "^4.17.1",
-    "express-handlebars": "^6.0.2"
+    "express-handlebars": "^6.0.2",
+    "json": "^11.0.0"
   },
   "type": "module",
   "devDependencies": {

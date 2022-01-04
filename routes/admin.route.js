@@ -15,6 +15,6 @@ router.post('/usd2mxn', (req, res) => {
   //guardar en la BD el nombre del producto
   products.push({ name });
   //redirecciono a la pantalla de inicio
-  res.redirect('/usd2mxn');
+  res.redirect('/');
   // Respondiendo en JSON el body
 });
